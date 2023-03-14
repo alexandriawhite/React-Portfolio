@@ -1,0 +1,13 @@
+.avatar {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 60%;
+    margin-bottom: 20px;
+  }
+  
+  .about-text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
