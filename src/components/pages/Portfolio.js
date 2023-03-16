@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/css/portfolio.css';
 import Weather from '../assets/WeatherForecast.png';
 import KRN from '../assets/krn.png';
 import SocialNetwork from '../assets/SocialNetwork.png';
@@ -51,10 +52,10 @@ export default function Projects() {
       <h2>Projects</h2>
       <ul>
         {projects.map((project, index) => (
-          <li key={index}>
+          <li key={index} className="card">
             <h3>{project.name}</h3>
             <a href={project.link} target="_blank" rel="noreferrer">
-              <img src={project.image} alt={project.name} />
+              <img src={project.image} alt={project.name} className="card-image" />
             </a>
             <p>{project.description}</p>
           </li>
@@ -63,3 +64,4 @@ export default function Projects() {
     </div>
   );
 }
+
