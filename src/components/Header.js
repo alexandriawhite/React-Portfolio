@@ -1,31 +1,17 @@
 import React from 'react';
+import NavTabs from './NavTabs';
+import './assets/css/header.css';
 
-function Header({ currentPage, handlePageChange }) {
+function Header() {
   return (
     <header className="header">
+      <div className="brand">
+        <a href="/">
+          <h1>Alexandria White</h1>
+        </a>
+      </div>
       <nav className="nav">
-        <ul className="nav-list">
-          <li className="nav-item">
-            <a href="#about" className={`nav-link ${currentPage === 'About' ? 'active' : ''}`} onClick={() => handlePageChange('About')}>
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#projects" className={`nav-link ${currentPage === 'Projects' ? 'active' : ''}`} onClick={() => handlePageChange('Projects')}>
-              Projects
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#resume" className={`nav-link ${currentPage === 'Resume' ? 'active' : ''}`} onClick={() => handlePageChange('Resume')}>
-              Resume
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#contact" className={`nav-link ${currentPage === 'Contact' ? 'active' : ''}`} onClick={() => handlePageChange('Contact')}>
-              Contact
-            </a>
-          </li>
-        </ul>
+        <NavTabs />
       </nav>
     </header>
   );

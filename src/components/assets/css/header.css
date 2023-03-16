@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0077be;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .brand h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav li {
+    margin-right: 10px;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
