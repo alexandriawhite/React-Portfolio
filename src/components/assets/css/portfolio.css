@@ -1,46 +1,50 @@
 /* Portfolio.css */
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 300px; /* or any other fixed width you want */
+  margin: 0 1rem 1rem 0; /* add margin to the right and bottom of each card */
+}
+
+.card:last-child {
+  margin-right: 0; /* remove margin from the last card in each row */
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card p {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.card a {
+  margin-top: 0.5rem;
+  color: blue;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
   .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    width: calc(100% / 3);
-    margin: 0;
+    width: 50%;
   }
-    
-  .card img {
+}
+  
+@media (max-width: 480px) {
+  .card {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
   }
-  
-  .card p {
-    font-weight: bold;
-    margin-top: 1rem;
-  }
-  
-  .card a {
-    margin-top: 0.5rem;
-    color: blue;
-    text-decoration: underline;
-  }
-  @media (max-width: 768px) {
-    .card {
-      width: 50%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .card {
-      width: 100%;
-    }
-  }
-  
+}

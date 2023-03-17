@@ -12,7 +12,7 @@ const projects = [
     name: 'KRN',
     image: KRN,
     link: 'https://github.com/devkjoon/krn',
-    description: 'A fitness application that allows users to track their workouts and fitness goals. KRN is a group project with contributions from Liam Allen, Joon Kim, and Trenton Kirchner',
+    description: 'A fitness application that allows users to track their workouts and fitness goals. KRN is a group project with contributions from Liam Allen, Joon Kim, Trenton Kirchner, and Alexandria White',
   },
   {
     name: 'Social Network API',
